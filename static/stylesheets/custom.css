@@ -1,0 +1,12 @@
+.header,
+.footer {
+	background:#366EB5 !important;
+	color:white !important;
+}
+
+@media only screen and (max-width:959px) {
+	.project {
+	    	background:#366EB5 !important;
+			color:white !important;
+	}
+}

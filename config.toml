@@ -1,0 +1,67 @@
+baseurl = "http://builder-docs.swillkb.com"
+languageCode = "en-us"
+title = "Plate & Case Builder - Documentation"
+theme = "hugo-material-docs"
+metadataformat = "yaml"
+canonifyurls = true
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = ""
+
+[params]
+	# General information
+	author = "swill"
+	description = "Documentation for builder.swillkb.com"
+	copyright = ""
+
+	# Repository
+	provider = "GitHub"
+	repo_url = "https://github.com/swill/builder-docs"
+
+	version = "1.0.0"
+	logo = "images/logo.png"
+	favicon = "images/favicon.png"
+
+	permalink = "#"
+
+	# Custom assets
+	custom_css = ["stylesheets/custom.css"]
+	custom_js  = []
+
+	# Syntax highlighting theme
+	highlight_css  = ""
+
+	[params.palette]
+    	primary = "teal"
+    	accent  = "deep-orange"
+
+    [params.font]
+    	text = "Ubuntu"
+    	code = "Ubuntu Mono"
+
+
+[social]
+	twitter = "swillops"
+	github  = "swill"
+
+
+[[menu.main]]
+	name   = "Docs Overview"
+	url    = "/"
+	weight = 0
+
+[[menu.main]]
+	name   = "Units & Dimensions"
+	url    = "units-dimensions/"
+	weight = 10
+
+[[menu.main]]
+	name   = "Keyboard Layouts"
+	url    = "keyboard-layouts/"
+	weight = 20
+
+
+[blackfriday]
+	smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true
