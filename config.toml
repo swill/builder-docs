@@ -46,7 +46,7 @@ googleAnalytics = ""
 
 [[menu.main]]
 	name   = "Docs Overview"
-	url    = "/"
+	url    = "http://builder-docs.swillkb.com/"
 	weight = 0
 
 [[menu.main]]
