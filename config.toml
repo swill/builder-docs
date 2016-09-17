@@ -1,4 +1,4 @@
-baseurl = "http://builder-docs.swillkb.com"
+baseurl = "http://builder-docs.swillkb.com/"
 languageCode = "en-us"
 title = "Plate & Case Builder - Documentation"
 theme = "hugo-material-docs"
@@ -15,7 +15,7 @@ googleAnalytics = ""
 
 	# Repository
 	provider = "GitHub"
-	repo_url = "https://github.com/swill/builder-docs"
+	repo_url = "https://github.com/swill/builder-docs/"
 
 	version = "1.0.0"
 	logo = "images/logo.png"
