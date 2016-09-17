@@ -60,7 +60,7 @@ googleAnalytics = ""
 	weight = 20
 
 [[menu.main]]
-	name   = "Contribute to Docs"
+	name   = "Contribute to the Docs"
 	url    = "contribute/"
 	weight = 1000
 
