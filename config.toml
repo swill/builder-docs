@@ -45,7 +45,7 @@ googleAnalytics = ""
 
 
 [[menu.main]]
-	name   = "Docs Overview"
+	name   = "Introduction"
 	url    = "http://builder-docs.swillkb.com/"
 	weight = 0
 
@@ -55,9 +55,14 @@ googleAnalytics = ""
 	weight = 10
 
 [[menu.main]]
-	name   = "Keyboard Layouts"
-	url    = "keyboard-layouts/"
+	name   = "Features"
+	url    = "features/"
 	weight = 20
+
+[[menu.main]]
+	name   = "Contribute to Docs"
+	url    = "contribute/"
+	weight = 1000
 
 
 [blackfriday]

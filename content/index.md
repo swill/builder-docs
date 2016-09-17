@@ -1,19 +1,35 @@
 ---
-title: Documentation Overview
+title: Introduction
 type: index
 weight: 0
 ---
 
+The documentation on this site is for the Plate & Case Builder available at <a href="http://builder.swillkb.com" target="_blank">builder.swillkb.com</a>.
+
 ## builder.swillkb.com
 
-If it was not already obvious, the purpose of this site it to document the features of the <a href="http://builder.swillkb.com" target="_blank">builder.swillkb.com</a> keyboard CAD generation tool.
+The Plate & Case Builder (builder) is a tool to aid in the design and creation of custom keyboards.  The builder generates CAD files to be cut by a laser cutter.
 
 
-## Contribute
+Keyboard layouts are created at <a href="http://www.keyboard-layout-editor.com/" target="_blank">keyboard-layout-editor.com</a> (KLE) and the `Raw data` is **copied**.
 
-The content of this website is maintained on Github at ..., so please feel free to contribute.  We will do our best to keep the content up-to-date with the functionality, but 100% coverage of the features will be a work in progress.
+![alt text][kle]
+
+Then the layout is **pasted** into the builder.
+
+![alt text][layout]
+
+Case details are specified.
+
+![alt text][options]
+
+Then your custom plate and case is drawn.
+
+![alt text][plate]
 
 
-### How to Contribute
 
-In order to contribute, you will need to fork the Github repository ..., make changes and then submit a Pull Request with the changes.  Once `swill` has a chance to review the changes, he will approve the pull request and will publish the changes to the live site.
+[kle]: /images/index/kle.png "Keyboard Layout Editor"
+[layout]: /images/index/layout.png "Keyboard Layout"
+[options]: /images/index/options.png "Options"
+[plate]: /images/index/plate.png "Plate"
