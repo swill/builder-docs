@@ -13,20 +13,21 @@ The Plate & Case Builder (builder) is a tool to aid in the design and creation o
 
 Keyboard layouts are created at <a href="http://www.keyboard-layout-editor.com/" target="_blank">keyboard-layout-editor.com</a> (KLE) and the `Raw data` is **copied**.
 
-![alt text][kle]
+![kle][kle]
 
 Then the layout is **pasted** into the builder.
 
-![alt text][layout]
+![layout][layout]
 
-Case details are specified.
+Then specify the details of the case.  More details can be found in the [Features](features/) section.
 
-![alt text][options]
+![options][options]
 
-Then your custom plate and case is drawn.
+Then you draw your custom plate and case.
 
-![alt text][plate]
+![plate][plate]
 
+The CAD files can be downloaded by clicking the file format under each layer.
 
 
 [kle]: /images/index/kle.png "Keyboard Layout Editor"

@@ -9,6 +9,7 @@ googleAnalytics = ""
 
 [params]
 	# General information
+	tabtitle = "Docs - Plate & Case Builder"
 	author = "swill"
 	description = "Documentation for builder.swillkb.com"
 	copyright = ""

@@ -9,22 +9,22 @@ The content of this website is maintained on Github at [github.com/swill/builder
 ## How to Contribute
 
 To contribute, you will need to fork the Github repository [github.com/swill/builder-docs](https://github.com/swill/builder-docs), and make changes in your own fork.  
-![alt text][github_fork]
+![github_fork][github_fork]
 
 Changes can be done by editing the files directly in the Github UI in your fork.  
-![alt text][github_edit]
+![github_edit][github_edit]
 
 Once finished editing the files, you will need to commit your changes.
-![alt text][github_commit]
+![github_commit][github_commit]
 
 Once finished making changes, create a new Pull Request to submit the changes back to `swill`s repository.  
 
 Click the `New Pull Request` button on the `Pull Requests` tab.
-![alt text][github_create_pr]
+![github_create_pr][github_create_pr]
 
 Click the `Create Pull Request` button to submit the changes to my repository.
 
-![alt text][github_submit_pr]
+![github_submit_pr][github_submit_pr]
 
 Once the pull request has been reviewed, it will be approved and the changes will get published to the live site.
 
