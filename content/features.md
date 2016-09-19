@@ -103,6 +103,3 @@ Only applies to the `Sandwich` case type.
 
 
 
-## Line
-
-
