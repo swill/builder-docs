@@ -39,7 +39,7 @@ this overrides the value set in the [Kerf](#kerf) section.  Values are in mm (wi
   Set in [Kerf](#kerf) / Adding `_k:1`  
   ![change_kerf][change_kerf]
 
-Here is an example using all of them together: `{_r:90, _rs:180, _t:0, _s:2, _k:0.25},""`
+Here is an example using all of them together: `{_r:90, _rs:180, _t:1, _s:2, _k:0.25},""`
 
 [layout]: /images/features/layout.png "Keyboard Layout"
 [rotate_switch]: /images/features/rotate_switch.png "Rotate Switch"
