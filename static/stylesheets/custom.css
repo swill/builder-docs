@@ -6,7 +6,12 @@
 
 @media only screen and (max-width:959px) {
 	.project {
-	    	background:#366EB5 !important;
-			color:white !important;
+    	background:#366EB5 !important;
+		color:white !important;
 	}
+}
+
+.article p>strong>code {
+    white-space: nowrap;
+    padding: 2px 4px;
 }

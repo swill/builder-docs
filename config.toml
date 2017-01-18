@@ -1,6 +1,6 @@
 baseurl = "http://builder-docs.swillkb.com/"
 languageCode = "en-us"
-title = "Plate & Case Builder - Documentation"
+title = "Documentation - builder.swillkb.com"
 theme = "hugo-material-docs"
 metadataformat = "yaml"
 canonifyurls = true
@@ -59,6 +59,11 @@ googleAnalytics = ""
 	name   = "Features"
 	url    = "features/"
 	weight = 20
+
+[[menu.main]]
+	name   = "Pro Tips"
+	url    = "pro-tips/"
+	weight = 30
 
 [[menu.main]]
 	name   = "Contribute to the Docs"
