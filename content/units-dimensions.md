@@ -5,7 +5,7 @@ weight: 10
 
 ## Builder Units
 
-All units used by the builder are in Millimeters (`mm`).  That includes dimensions, coordinates and output.  Unfortunately, the current library I am using for exporting DXF files does not support specifying the units in the file format.  Because of this, the dimensions are in `mm` in the drawing, but no units are exported with the DXF file.  Make sure your CAD program is set to `mm` when you open the DXF because it will assume your default units.  If you need a file with units defined for your laser cutter, you will want to open the file in LibreCAD (or some other CAD software), make sure the drawing units are set to `mm`, and then save as a `DXF 2007` file format.  The `DXF 2007` format will save the units as well as the dimension in the resulting DXF file.
+All units used by the builder are in Millimeters (`mm`).  That includes dimensions, coordinates and output.  Unfortunately, the current library I am using for exporting DXF files does not support specifying the units in the file format.  Because of this, the dimensions are in `mm` in the drawing, but no units are exported with the DXF file.  Make sure your CAD program is set to `mm` when you open the DXF because it will assume your default units.  If you need a file with units defined for your laser cutter, you will want to open the file in LibreCAD (or some other CAD software), make sure the drawing units are set to `mm`, and then save as a `DXF 2007` file format.  The `DXF 2007` format will save the units as well as the dimension in the resulting DXF file.  [Detailed instructions can be found here...](/pro-tips/#save-a-dxf-with-units)
 
 ## Key Sizing & Spacing
 
