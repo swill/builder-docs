@@ -66,6 +66,11 @@ googleAnalytics = ""
 	weight = 30
 
 [[menu.main]]
+	name   = "Need Help?"
+	url    = "need-help/"
+	weight = 40
+
+[[menu.main]]
 	name   = "Contribute to the Docs"
 	url    = "contribute/"
 	weight = 1000
