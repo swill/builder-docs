@@ -232,7 +232,13 @@ If you order your job through the <a href="http://builder.swillkb.com" target="_
 
 
 
-## Line
+## Line Color
 
-The line feature allows you to adjust the color of the cut lines.  Some laser cutters are picky about the color of the cut lines in the SVG, so this lets you conform to their requests.  If you need to change the line color for your fabrication shop, specify the new color here.  Many colors can be referenced just by specifying the name (eg: `blue`) but you can also use Hex values (eg: `#2E69B3`).
+The line color feature allows you to adjust the color of the cut lines.  Some laser cutters are picky about the color of the cut lines in the SVG, so this lets you conform to their requests.  If you need to change the line color for your fabrication shop, specify the new color here.  Many colors can be referenced just by specifying the name (eg: `blue`) but you can also use Hex values (eg: `#2E69B3`).
+
+
+
+## Line Weight
+
+The line weight feature allows you to adjust the stroke weight of the cut lines.  Some laser cutters are picky about the weight of the cut lines in the SVG, so this lets you conform to their requests.  If you need to change the line weight for your fabrication shop, specify the new weight here.  The builder defaults to `0.05`mm and overrides are expected to be in `mm` (but only as a floating point number without any `mm` text).
 
