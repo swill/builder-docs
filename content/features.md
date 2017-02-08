@@ -34,10 +34,15 @@ stabilizer cutout (assuming there is one).
   Set in [Stabilizer Type](#stabilizer-type) <i>&nbsp;&nbsp;vs&nbsp;&nbsp;</i> Adding `_s:3`  
   ![layout_change_stab][layout_change_stab]
 
+* **Custom Polygons `{_c:"<index>[,index]"}`:**  Example, `{_c:"0,1"}`.  The index values are found in the [Custom Polygons](#custom-polygons) section associated with each line item.  The specified custom polygon(s) will be drawn relative to the center point of the specific switch.  
+  Set in [Stabilizer Type](#stabilizer-type) <i>&nbsp;&nbsp;vs&nbsp;&nbsp;</i> Adding `_c:"0,1"` with the appropriate Custom Polygons  
+  ![layout_custom_polygons][layout_custom_polygons]
+
 * **Cutting Kerf `{_k:<mm>}`:**  Example, `{_k:0.25},""`.  The kerf value for an individual switch/stabilizer cutout, 
 this overrides the value set in the [Kerf](#kerf) section.  Values are in mm (without the unit).  
   Set in [Kerf](#kerf) <i>&nbsp;&nbsp;vs&nbsp;&nbsp;</i> Adding `_k:1`  
   ![layout_change_kerf][layout_change_kerf]
+
 
 Here is an example using all of them together: `{_r:90, _rs:180, _t:1, _s:2, _k:0.25},""`
 
@@ -46,12 +51,14 @@ Here is an example using all of them together: `{_r:90, _rs:180, _t:1, _s:2, _k:
 [layout_rotate_stab]: /images/features/layout_rotate_stab.png "Rotate Stabilizer"
 [layout_change_switch]: /images/features/layout_change_switch.png "Change Switch Type"
 [layout_change_stab]: /images/features/layout_change_stab.png "Change Stabilizer Type"
+[layout_custom_polygons]: /images/features/layout_custom_polygons.png "Add Custom Polygons"
 [layout_change_kerf]: /images/features/layout_change_kerf.png "Change Kerf"
 <style type="text/css">
 	img[alt=layout_rotate_switch],
 	img[alt=layout_rotate_stab],
 	img[alt=layout_change_switch],
 	img[alt=layout_change_stab],
+  img[alt=layout_custom_polygons],
 	img[alt=layout_change_kerf] {
 		width: 285px;
 	}
@@ -203,9 +210,13 @@ If it is not clear from above, a single polygon definition can be placed in mult
 **Coordinates and Positioning**  
 Points are defined inside square brackets (`[ ]`) and separated by a semicolon (`;`).  
 
-The point `[0,0]` is defined to be the center of the case.  The values `x` and `y` can be used in the coordinate system to represent *1/2 the total width* and *1/2 the total height* respectively.  This means the following locations are represented as follows; top left = [-x,-y], top right = `[x,-y]`, bottom left = `[-x,y]`, bottom right = `[x,y]`.
+The point `[0,0]` is defined to be the center of the case.  The values `x` and `y` can be used in the coordinate system to represent *1/2 the total width* and *1/2 the total height* respectively.  This means the following locations are represented as follows; top left = `[-x,-y]`, top right = `[x,-y]`, bottom left = `[-x,y]`, bottom right = `[x,y]`.
 
 In addition to being able to use `x` and `y` to help represent a point in space, you can also represent a coordinate as a set of arithmetic equations.  For example, if you wanted to represent a point on the top side of the case which splits the difference between the center of the board and 20mm from the top left corner, you would represent that point as: `[(-x+20)/2, -y]`.  This provides a lot of flexibility in representing points related to the plate/case and enables you to have handle symmetry in an intuitive manor.  
+
+In addition to being able to place custom polygons based on positioning relative the size of the case, custom polygons can be placed based on the center point of a switch for a specific key in the layout.  This is done by adding the `{_c:"0,1"}` details object, where `0` and `1` are the index values for the custom polygons to be drawn relative to that switch center.  This is very useful if you want to modify things like the stabilizer cutout for a 3mm switch plate so a cherry stabilizer wire has somewhere to go.  
+
+Check the [Plate Layout](#plate-layout) section for additional details regarding the individual key based placement.
 
 **Example**  
 This feature is best described with an example, so here is a 60% layout with added tabs and holes in the tabs.  
