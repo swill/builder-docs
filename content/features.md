@@ -243,6 +243,14 @@ If you order your job through the <a href="http://builder.swillkb.com" target="_
 
 
 
+## Key Unit
+
+The key unit feature allows the default key unit size of `19.05mm` to be modified.  This feature is useful if a PCB designer has used a value such as `19.00mm` instead of the standard `19.05mm` for the sizing of a single key unit.
+
+**Note:** This feature does not modify the spacing of the space bar stabilizer position.
+
+
+
 ## Line Color
 
 The line color feature allows you to adjust the color of the cut lines.  Some laser cutters are picky about the color of the cut lines in the SVG, so this lets you conform to their requests.  If you need to change the line color for your fabrication shop, specify the new color here.  Many colors can be referenced just by specifying the name (eg: `blue`) but you can also use Hex values (eg: `#2E69B3`).
