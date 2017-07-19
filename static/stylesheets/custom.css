@@ -15,3 +15,11 @@
     white-space: nowrap;
     padding: 2px 4px;
 }
+
+.admonition.note a {
+	color:#d5f9f6;
+}
+
+.admonition.note a:hover {
+	color:#ffc3b0;
+}

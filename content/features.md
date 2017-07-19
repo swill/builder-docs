@@ -197,15 +197,19 @@ There are two different polygon operations which you can use.
 
 Currently there are four types of polygons which can be added or removed from the drawings.
 
-* **Circle** - Defines a circle with a `diameter` which is placed at each of the `circle centers` locations.
+* **Circle** - Defines a circle with a `diameter` which is placed at each of the `circle centers` locations, according to the `relative to` points.  If more than one `relative to` point is specified the set of shapes is duplicated at each `relative to` location.
 
-* **Rectangle** - Defines a rectangle with a `width` and `height` which is placed at each of the `rectangle centers` locations.
+* **Rectangle** - Defines a rectangle with a `width` and `height` which is placed at each of the `rectangle centers` locations, according to the `relative to` points.  If more than one `relative to` point is specified the set of shapes is duplicated at each `relative to` location.
 
-* **Rounded Rectangle** - Defines a rectangle with rounded corners according the `radius` which will have a `width` and `height` and will be placed at each of the `rounded rectangle centers` locations.
+* **Rounded Rectangle** - Defines a rectangle with rounded corners according the `radius` which will have a `width` and `height` and will be placed at each of the `rounded rectangle centers` locations, according to the `relative to` points.  If more than one `relative to` point is specified the set of shapes is duplicated at each `relative to` location.
 
 * **Custom Polygon** - You define a custom polygon by defining a `closed path of points` in **clockwise** order, and this polygon will be places at each of the defined `relative to` points.
 
-If it is not clear from above, a single polygon definition can be placed in multiple locations by defining more than one `center` or `relative to` point.
+If it is not clear from above, a single polygon definition can be placed in multiple locations by defining more than one `center` and/or `relative to` point.
+
+{{< note title="Note" >}}
+If you define a shape and do not specify any `relative to` points, the shape will not be drawn.  However, if you use the `{_c:"<index>[,index]"},"key"` formatting defined in the [Plate Layout](#plate-layout) section, the center of the associated key will be used as the `relative to` point.  This is very useful for placing custom cutouts relative to specific keys in the plate layout.
+{{< /note >}}
 
 **Coordinates and Positioning**  
 Points are defined inside square brackets (`[ ]`) and separated by a semicolon (`;`).  
@@ -218,7 +222,7 @@ In addition to being able to place custom polygons based on positioning relative
 
 Check the [Plate Layout](#plate-layout) section for additional details regarding the individual key based placement.
 
-**Example**  
+**Example 1**  
 This feature is best described with an example, so here is a 60% layout with added tabs and holes in the tabs.  
 
 *Custom Polygon*  
@@ -229,9 +233,29 @@ Path: `[0,0]; [5,-5]; [25,-5]; [30,0]; [25,5]; [5,5]`
 *Circle*  
 Op: `Cut`  
 Diameter: `3`  
+Rel-To: `[0,0]`  
 Centers: `[-x+15,-y-1.5]; [x-15,-y-1.5]; [-x+15,y+1.5]; [x-15,y+1.5]`  
 
-![custom_polygon_eg](/images/features/custom_polygon_eg.png "Custom Polygons Example")
+![custom_polygon_eg1](/images/features/custom_polygon_eg1.png "Custom Polygons Example 1")
+
+
+**Example 2**  
+In this contrived example, the use of cutouts associated with specific keys is illustrated.
+
+*Plate Layout*
+```
+[{_c:"0"},"","",""],
+["",{_c:"0"},"",""],
+["","",{_c:"0"},""]
+```
+
+*Circle* (index: 0)  
+Op: `Cut`  
+Diameter: `3`  
+Rel-To: *not defined*  
+Centers: `[7,7];[-7,7];[-7,-7];[7,-7]`  
+
+![custom_polygon_eg2](/images/features/custom_polygon_eg2.png "Custom Polygons Example 2")
 
 
 
