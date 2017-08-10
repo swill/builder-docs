@@ -197,13 +197,31 @@ There are two different polygon operations which you can use.
 
 Currently there are four types of polygons which can be added or removed from the drawings.
 
-* **Circle** - Defines a circle with a `diameter` which is placed at each of the `circle centers` locations, according to the `relative to` points.  If more than one `relative to` point is specified the set of shapes is duplicated at each `relative to` location.
+* **Circle**<div><div style="float:left;">![custom_polygon_circle][custom_polygon_circle]</div><div>Defines a circle with a `diameter` which is placed at each of the `circle centers` locations, according to the `relative to` points.  If more than one `relative to` point is specified the set of shapes is duplicated at each `relative to` location.</div></div><div style="clear:both;height:1px;">&nbsp;</div>
 
-* **Rectangle** - Defines a rectangle with a `width` and `height` which is placed at each of the `rectangle centers` locations, according to the `relative to` points.  If more than one `relative to` point is specified the set of shapes is duplicated at each `relative to` location.
+* **Superellipse**<div><div style="float:left;">![custom_polygon_superellipse][custom_polygon_superellipse]</div><div>Defines a superellipse with a concave `radius` which is placed at each of the `superellipse centers` locations, according to the `relative to` points.  If more than one `relative to` point is specified the set of shapes is duplicated at each `relative to` location.  A superellipse is primarily used to set custom rounded corners on both concave or convex rectangular corners.</div></div><div style="clear:both;height:1px;">&nbsp;</div>
 
-* **Rounded Rectangle** - Defines a rectangle with rounded corners according the `radius` which will have a `width` and `height` and will be placed at each of the `rounded rectangle centers` locations, according to the `relative to` points.  If more than one `relative to` point is specified the set of shapes is duplicated at each `relative to` location.
+* **Rectangle**<div><div style="float:left;">![custom_polygon_rectangle][custom_polygon_rectangle]</div><div>Defines a rectangle with a `width` and `height` which is placed at each of the `rectangle centers` locations, according to the `relative to` points.  If more than one `relative to` point is specified the set of shapes is duplicated at each `relative to` location.</div></div><div style="clear:both;height:1px;">&nbsp;</div>
 
-* **Custom Polygon** - You define a custom polygon by defining a `closed path of points` in **clockwise** order, and this polygon will be places at each of the defined `relative to` points.
+* **Rounded Rectangle**<div><div style="float:left;">![custom_polygon_rounded_rectangle][custom_polygon_rounded_rectangle]</div><div>Defines a rectangle with rounded corners according the `radius` which will have a `width` and `height` and will be placed at each of the `rounded rectangle centers` locations, according to the `relative to` points.  If more than one `relative to` point is specified the set of shapes is duplicated at each `relative to` location.</div></div><div style="clear:both;height:1px;">&nbsp;</div>
+
+* **Custom Polygon**<div><div style="float:left;">![custom_polygon_irregular][custom_polygon_irregular]</div><div>You define a custom polygon by defining a `closed path of points` in **clockwise** order, and this polygon will be places at each of the defined `relative to` points.</div></div><div style="clear:both;height:1px;">&nbsp;</div>
+
+[custom_polygon_circle]: /images/features/custom_polygon_circle.png "Circle"
+[custom_polygon_superellipse]: /images/features/custom_polygon_superellipse.png "Superellipse"
+[custom_polygon_rectangle]: /images/features/custom_polygon_rectangle.png "Rectangle"
+[custom_polygon_rounded_rectangle]: /images/features/custom_polygon_rounded_rectangle.png "Rounded Rectangle"
+[custom_polygon_irregular]: /images/features/custom_polygon_irregular.png "Irregular Polygon"
+<style type="text/css">
+  img[alt=custom_polygon_circle],
+  img[alt=custom_polygon_superellipse],
+  img[alt=custom_polygon_rectangle],
+  img[alt=custom_polygon_rounded_rectangle],
+  img[alt=custom_polygon_irregular] {
+    width: 85px;
+    padding-right:10px;
+  }
+</style>
 
 If it is not clear from above, a single polygon definition can be placed in multiple locations by defining more than one `center` and/or `relative to` point.
 
