@@ -48,7 +48,7 @@ googleAnalytics = ""
 [[menu.main]]
 	name   = "Introduction"
 	url    = "http://builder-docs.swillkb.com/"
-	weight = 0
+	weight = 1
 
 [[menu.main]]
 	name   = "Units & Dimensions"

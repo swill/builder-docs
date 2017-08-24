@@ -1,7 +1,7 @@
 ---
 title: Introduction
 type: index
-weight: 0
+weight: 1
 ---
 
 The documentation on this site is for the Plate & Case Builder available at <a href="http://builder.swillkb.com" target="_blank">builder.swillkb.com</a>.
